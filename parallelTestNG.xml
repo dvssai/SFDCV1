@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name ="Suite" thread-count = "5" parallel ="tests">
+
+
+	<listeners>
+	<listener class-name="Utilities.ExtentReportManager"></listener>
+	</listeners>
+
+<test name ="Chrometest1">
+<classes><class name="testCases.TC_001_Create_contact"></class></classes>
+</test>
+<test name="Chrometest2">
+<classes><class name="testCases.TC_002_Create_lead"></class></classes>
+</test>
+<test name ="Chrometest3">
+<classes><class name="testCases.TC_003_Create_account"></class></classes>
+</test>
+</suite>

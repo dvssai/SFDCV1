@@ -1,0 +1,44 @@
+2025-03-07 11:24:21 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\2321707\OneDrive - Cognizant\Desktop\SFDC login\SFDCV1\testng.xml
+
+2025-03-07 11:24:22 INFO  TC_003_Create_account:34 - Starting setup for baseClass.
+2025-03-07 11:24:28 INFO  TC_003_Create_account:45 - Browser launched and URL opened successfully.
+2025-03-07 11:24:28 INFO  TC_003_Create_account:51 - Setup completed successfully.
+2025-03-07 11:24:32 INFO  TC_003_Create_account:60 - User Logged into Sucessfully.
+2025-03-07 11:24:52 ERROR TC_003_Create_account:69 - Failed to navigate to Salesorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@title = 'App Launcher']' (tried for 10 second(s) with 500 milliseconds interval)
+2025-03-07 11:25:37 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\2321707\OneDrive - Cognizant\Desktop\SFDC login\SFDCV1\testng.xml
+
+2025-03-07 11:25:37 INFO  TC_003_Create_account:34 - Starting setup for baseClass.
+2025-03-07 11:25:43 INFO  TC_003_Create_account:45 - Browser launched and URL opened successfully.
+2025-03-07 11:25:43 INFO  TC_003_Create_account:51 - Setup completed successfully.
+2025-03-07 11:25:48 INFO  TC_003_Create_account:60 - User Logged into Sucessfully.
+2025-03-07 11:25:51 INFO  TC_003_Create_account:67 - Navigated to Sales sucessfully.
+2025-03-07 11:25:59 INFO  TC_003_Create_account:77 - Browser closed successfully.
+2025-03-07 11:43:05 INFO  TC_003_Create_account:34 - Starting setup for baseClass.
+2025-03-07 11:43:11 INFO  TC_003_Create_account:45 - Browser launched and URL opened successfully.
+2025-03-07 11:43:11 INFO  TC_003_Create_account:51 - Setup completed successfully.
+2025-03-07 11:43:16 INFO  TC_003_Create_account:60 - User Logged into Sucessfully.
+2025-03-07 11:43:19 INFO  TC_003_Create_account:67 - Navigated to Sales sucessfully.
+2025-03-07 11:43:27 INFO  TC_003_Create_account:77 - Browser closed successfully.
+2025-03-07 11:47:53 INFO  TC_001_Create_contact:34 - Starting setup for baseClass.
+2025-03-07 11:48:00 INFO  TC_001_Create_contact:45 - Browser launched and URL opened successfully.
+2025-03-07 11:48:00 INFO  TC_001_Create_contact:51 - Setup completed successfully.
+2025-03-07 11:48:06 INFO  TC_001_Create_contact:60 - User Logged into Sucessfully.
+2025-03-07 11:48:09 INFO  TC_001_Create_contact:67 - Navigated to Sales sucessfully.
+2025-03-07 11:48:09 INFO  TC_001_Create_contact:29 - Clicked on contact sucessfully.
+2025-03-07 11:48:18 INFO  TC_001_Create_contact:40 - contact created sucessfully.
+2025-03-07 11:48:20 INFO  TC_001_Create_contact:50 - Contact verified successfully
+2025-03-07 11:48:25 INFO  TC_001_Create_contact:77 - Browser closed successfully.
+2025-03-07 11:48:25 INFO  TC_002_Create_lead:34 - Starting setup for baseClass.
+2025-03-07 11:48:30 INFO  TC_002_Create_lead:45 - Browser launched and URL opened successfully.
+2025-03-07 11:48:30 INFO  TC_002_Create_lead:51 - Setup completed successfully.
+2025-03-07 11:48:35 INFO  TC_002_Create_lead:60 - User Logged into Sucessfully.
+2025-03-07 11:48:38 INFO  TC_002_Create_lead:67 - Navigated to Sales sucessfully.
+2025-03-07 11:48:53 INFO  TC_002_Create_lead:77 - Browser closed successfully.
+2025-03-07 11:48:53 INFO  TC_003_Create_account:34 - Starting setup for baseClass.
+2025-03-07 11:48:58 INFO  TC_003_Create_account:45 - Browser launched and URL opened successfully.
+2025-03-07 11:48:58 INFO  TC_003_Create_account:51 - Setup completed successfully.
+2025-03-07 11:49:03 INFO  TC_003_Create_account:60 - User Logged into Sucessfully.
+2025-03-07 11:49:06 INFO  TC_003_Create_account:67 - Navigated to Sales sucessfully.
+2025-03-07 11:49:14 INFO  TC_003_Create_account:77 - Browser closed successfully.
