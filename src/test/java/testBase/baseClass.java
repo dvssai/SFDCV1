@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import Utilities.ExtentReporter;
+import com.aventstack.extentreports.Status;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,6 +24,7 @@ public class baseClass {
     public WebDriver driver;
     public Properties p;
     protected Logger log;
+    //ExtentReporter extentReporter = new ExtentReporter();
 
     @BeforeClass
     public void setup() throws IOException {
@@ -29,12 +32,16 @@ public class baseClass {
         FileReader file = new FileReader("./src/test/resources/config.properties");
         p = new Properties();
         p.load(file);
+        //extentReporter.OntestStart("TC");
 
         log = LogManager.getLogger(this.getClass());
         log.info("Starting setup for baseClass.");
+        //extentReporter.test.log(Status.INFO,"Starting setup for baseClass.");
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-notifications");
+
+        //extentReporter.onStart();
 
         try {
             driver = new ChromeDriver(options);
@@ -43,38 +50,48 @@ public class baseClass {
             driver.get(p.getProperty("URL"));
             driver.manage().window().maximize();
             log.info("Browser launched and URL opened successfully.");
+            //extentReporter.test.log(Status.INFO,"Browser launched and URL opened successfully.");
         } catch (Exception e) {
             log.error("Error during browser setup or URL opening: " + e.getMessage());
+            //extentReporter.test.log(Status.FAIL,"Error during browser setup or URL opening: " + e.getMessage());
             throw new RuntimeException("Failed to setup WebDriver.", e);
         }
 
-        log.info("Setup completed successfully.");
+        //extentReporter.test.log(Status.INFO,"Browser launched and URL opened successfully.");
     }
 
     @BeforeMethod
     public void login() {
         loginPage lp = new loginPage(driver);
         setupPage sp = new setupPage(driver);
+
         try {
             lp.login(p.getProperty("username"), p.getProperty("password"));
             log.info("User Logged into Sucessfully.");
+            //extentReporter.test.log(Status.INFO,"User Logged into Sucessfully.");
         } catch (Exception e) {
             log.error("Failed to login into salesforce sucessfully.");
+            //extentReporter.test.log(Status.FAIL,"Failed to login into salesforce sucessfully.");
         }
 
         try {
             sp.navigateToSales();
             log.info("Navigated to Sales sucessfully.");
+            //extentReporter.test.log(Status.INFO,"Navigated to Sales sucessfully.");
         } catch (Exception e) {
             log.error("Failed to navigate to Sales" + e);
+            //extentReporter.test.log(Status.FAIL,"Failed to navigate to Sales" + e);
         }
     }
 
     @AfterClass
     public void tearDown() {
+        //extentReporter.onFinish();
+
         if (driver != null) {
             driver.quit();
             log.info("Browser closed successfully.");
+            //extentReporter.test.log(Status.INFO,"Browser closed successfully.");
         } else {
             log.warn("WebDriver was null during teardown.");
         }

@@ -10,4 +10,5 @@ pageObjects\setupPage.class
 testBase\baseClass.class
 testCases\TC_001_Create_contact.class
 Utilities\CommonUtils.class
+Utilities\log4j2ExtentIntegration.class
 Utilities\ExtentReportManager.class

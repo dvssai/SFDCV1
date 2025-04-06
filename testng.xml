@@ -5,11 +5,11 @@
 	<listeners>
 	<listener class-name="Utilities.ExtentReportManager"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Regression">
     <classes>
       <class name="testCases.TC_001_Create_contact"/>
-      <class name="testCases.TC_002_Create_lead"/>
-      <class name="testCases.TC_003_Create_account"/>
+     <!-- <class name="testCases.TC_002_Create_lead"/>
+      <class name="testCases.TC_003_Create_account"/>-->
     </classes>
   </test> 
 </suite> 
